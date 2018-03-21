@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>bnews_project</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>PublicIndexController</servlet-name>
+		<servlet-class>controller.PublicIndexController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicIndexController</servlet-name>
+		<url-pattern></url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PublicCatController</servlet-name>
+		<servlet-class>controller.PublicCatController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicCatController</servlet-name>
+		<url-pattern>/public/cat</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PublicNewsController</servlet-name>
+		<servlet-class>controller.PublicNewsController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicNewsController</servlet-name>
+		<url-pattern>/public/news</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PublicDetailController</servlet-name>
+		<servlet-class>controller.PublicDetailController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicDetailController</servlet-name>
+		<url-pattern>/public/detail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PublicLoginController</servlet-name>
+		<servlet-class>controller.PublicLoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicLoginController</servlet-name>
+		<url-pattern>/public/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PublicLogoutController</servlet-name>
+		<servlet-class>controller.PublicLogoutController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicLogoutController</servlet-name>
+		<url-pattern>/public/logout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PublicCommentController</servlet-name>
+		<servlet-class>controller.PublicCommentController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicCommentController</servlet-name>
+		<url-pattern>/public/comment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PublicReplyController</servlet-name>
+		<servlet-class>controller.PublicReplyController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicReplyController</servlet-name>
+		<url-pattern>/public/reply</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PublicSearchController</servlet-name>
+		<servlet-class>controller.PublicSearchController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicSearchController</servlet-name>
+		<url-pattern>/public/search</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>AdminIndexController</servlet-name>
+		<servlet-class>controller.AdminIndexController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminIndexController</servlet-name>
+		<url-pattern>/admin/</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminCatIndexController</servlet-name>
+		<servlet-class>controller.AdminCatIndexController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminCatIndexController</servlet-name>
+		<url-pattern>/admin/cat/</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminCatAddController</servlet-name>
+		<servlet-class>controller.AdminCatAddController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminCatAddController</servlet-name>
+		<url-pattern>/admin/cat/add</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminCatEditController</servlet-name>
+		<servlet-class>controller.AdminCatEditController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminCatEditController</servlet-name>
+		<url-pattern>/admin/cat/edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminCatDelController</servlet-name>
+		<servlet-class>controller.AdminCatDelController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminCatDelController</servlet-name>
+		<url-pattern>/admin/cat/del</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminNewsIndexController</servlet-name>
+		<servlet-class>controller.AdminNewsIndexController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminNewsIndexController</servlet-name>
+		<url-pattern>/admin/news/</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminNewsAddController</servlet-name>
+		<servlet-class>controller.AdminNewsAddController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminNewsAddController</servlet-name>
+		<url-pattern>/admin/news/add</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminNewsEditController</servlet-name>
+		<servlet-class>controller.AdminNewsEditController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminNewsEditController</servlet-name>
+		<url-pattern>/admin/news/edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminNewsDelController</servlet-name>
+		<servlet-class>controller.AdminNewsDelController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminNewsDelController</servlet-name>
+		<url-pattern>/admin/news/del</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminUserIndexController</servlet-name>
+		<servlet-class>controller.AdminUserIndexController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminUserIndexController</servlet-name>
+		<url-pattern>/admin/user/</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminUserAddController</servlet-name>
+		<servlet-class>controller.AdminUserAddController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminUserAddController</servlet-name>
+		<url-pattern>/admin/user/add</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminUserEditController</servlet-name>
+		<servlet-class>controller.AdminUserEditController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminUserEditController</servlet-name>
+		<url-pattern>/admin/user/edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminShowUserEditController</servlet-name>
+		<servlet-class>controller.AdminShowUserEditController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminShowUserEditController</servlet-name>
+		<url-pattern>/admin/show-user/edit</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>AdminUserDelController</servlet-name>
+		<servlet-class>controller.AdminUserDelController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminUserDelController</servlet-name>
+		<url-pattern>/admin/user/del</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AuthLoginController</servlet-name>
+		<servlet-class>controller.AuthLoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AuthLoginController</servlet-name>
+		<url-pattern>/auth/login/</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AuthLogoutController</servlet-name>
+		<servlet-class>controller.AuthLogoutController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AuthLogoutController</servlet-name>
+		<url-pattern>/auth/logout/</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AuthProfileController</servlet-name>
+		<servlet-class>controller.AuthProfileController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AuthProfileController</servlet-name>
+		<url-pattern>/auth/profile/</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+	
+	<servlet>
+		<servlet-name>ConnectorServlet</servlet-name>
+		<servlet-class>com.ckfinder.connector.ConnectorServlet</servlet-class>
+		<init-param>
+			<description>
+				Path to configuration file can be relative path inside application,
+				absolute path on local file system or UNC path.
+			</description>
+			<param-name>XMLConfig</param-name>
+			<param-value>/WEB-INF/config.xml</param-value>
+		</init-param>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ConnectorServlet</servlet-name>
+		<url-pattern>
+			/libraries/ckfinder/core/connector/java/connector.java
+		</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+		<filter-name>UrlRewriteFilter</filter-name>
+		<filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>UrlRewriteFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+</web-app>
